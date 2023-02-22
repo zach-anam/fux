@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@material/web": "^1.0.0-pre.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@theme-toggles/react": "^4.1.0",
+    "rollup": "^3.17.2"
+  }
+}

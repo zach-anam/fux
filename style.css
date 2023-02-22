@@ -1,0 +1,135 @@
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+.nav {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+
+}
+h2 {
+    font-size: 4rem;
+}
+ h1 {
+    margin-bottom: 1rem;
+    font-size: 4.2rem;
+ }
+main {
+    display: flex;
+    gap: 8rem;
+
+}
+
+.left-col {
+    max-width: 45%;
+}
+.right-col {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "left ."
+    "left .";
+    gap: 2rem;
+}
+.cta-btns {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cta-btns  > a:not(:nth-child(2)) {
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.details {
+    display: flex;
+    gap: 2rem;
+    border: .125rem solid;
+    padding: 4rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.details::before {
+    position: absolute;
+    content: "";
+    background: url(./imgs/Confetti.svg) no-repeat;
+    background-size: 40%;
+    top: -60px;
+    left: -60px;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    pointer-events: none;
+}
+.employees {
+    font-size: 4rem;
+    line-height: 100%;
+}
+.card {
+    background-color: #eee;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: #fff;
+    background-size: 140%;
+    transition: all .4s ease;
+    border-radius: 1rem;
+}
+
+.card:hover  {
+    background-size: 120%;
+}
+
+.card-one {
+    grid-area: left;
+    background-image: url(./imgs/tall.jpg);
+}
+.card-two {
+    background-image: url(./imgs/bottom.jpg);
+}
+.card-three {
+    background-image: url(./imgs/top.jpg);
+}
+
+.tag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+    color: #000;
+    transition: .4s ease;
+    font-size: 1.3rem;
+}
+.card:hover .tag {
+    transform: translateY(-1.5rem);
+}
