@@ -1,135 +1,133 @@
-
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    font-size: 1.6rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .wrapper {
-    max-width: 1200px;
-    margin: 4rem auto;
+  max-width: 1200px;
+  margin: 4rem auto;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7em;
 }
 .nav {
-    list-style-type: none;
-    display: flex;
-    gap: 3rem;
-
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
 }
 h2 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
- h1 {
-    margin-bottom: 1rem;
-    font-size: 4.2rem;
- }
+h1 {
+  margin-bottom: 0.4em;
+  font-size: 4.2rem;
+}
 main {
-    display: flex;
-    gap: 8rem;
-
+  display: flex;
+  gap: 5em;
 }
 
 .left-col {
-    max-width: 45%;
+  max-width: 45%;
 }
 .right-col {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas: "left ."
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas:
+    "left ."
     "left .";
-    gap: 2rem;
+  gap: 1.2em;
 }
 .cta-btns {
-    padding: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 2.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.cta-btns  > a:not(:nth-child(2)) {
-    background-color: bisque;
-    padding: 1rem;
-    border-radius: .5rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+.cta-btns > a:not(:nth-child(2)) {
+  background-color: bisque;
+  padding: 0.7em;
+  border-radius: 0.3em;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 .details {
-    display: flex;
-    gap: 2rem;
-    border: .125rem solid;
-    padding: 4rem;
-    border-radius: 1rem;
-    position: relative;
+  display: flex;
+  gap: 2em;
+  border: 0.1em solid;
+  padding: 3em;
+  border-radius: 0.7em;
+  position: relative;
 }
 .details::before {
-    position: absolute;
-    content: "";
-    background: url(./imgs/Confetti.svg) no-repeat;
-    background-size: 40%;
-    top: -60px;
-    left: -60px;
-    width: 300px;
-    height: 300px;
-    z-index: 2;
-    pointer-events: none;
+  position: absolute;
+  content: "";
+  background: url(./imgs/Confetti.svg) no-repeat;
+  background-size: 40%;
+  top: -60px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  pointer-events: none;
 }
 .employees {
-    font-size: 4rem;
-    line-height: 100%;
+  font-size: 4rem;
+  line-height: 100%;
 }
 .card {
-    background-color: #eee;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    color: #fff;
-    background-size: 140%;
-    transition: all .4s ease;
-    border-radius: 1rem;
+  background-color: #eee;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #fff;
+  background-size: 140%;
+  transition: all 0.4s ease;
+  border-radius: 0.7em;
 }
 
-.card:hover  {
-    background-size: 120%;
+.card:hover {
+  background-size: 120%;
 }
 
 .card-one {
-    grid-area: left;
-    background-image: url(./imgs/tall.jpg);
+  grid-area: left;
+  background-image: url(./imgs/tall.jpg);
 }
 .card-two {
-    background-image: url(./imgs/bottom.jpg);
+  background-image: url(./imgs/bottom.jpg);
 }
 .card-three {
-    background-image: url(./imgs/top.jpg);
+  background-image: url(./imgs/top.jpg);
 }
 
 .tag {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 70%;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    margin-bottom: 1.2rem;
-    color: #000;
-    transition: .4s ease;
-    font-size: 1.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 0.7em;
+  margin-bottom: 1.2em;
+  color: #000;
+  transition: 0.4s ease;
+  font-size: 1.3rem;
 }
 .card:hover .tag {
-    transform: translateY(-1.5rem);
+  transform: translateY(-1.5em);
 }
